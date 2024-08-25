@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://cbx83ks86ocig"]
+
+[ext_resource type="PackedScene" uid="uid://cioudq2tiq60f" path="res://Scenes/enemy.tscn" id="1_smuec"]
+[ext_resource type="Texture2D" uid="uid://badv530v351bc" path="res://Assets/Textures/ufoRed.png" id="2_n0f7g"]
+
+[node name="DiverEnemy" instance=ExtResource("1_smuec")]
+SPEED = 400.0
+HP = 1
+POINTS = 200
+
+[node name="Sprite2D" parent="." index="0"]
+texture = ExtResource("2_n0f7g")
+
+[node name="CollisionShape2D" parent="." index="1"]
+position = Vector2(0, -1)
+
+[node name="Muzzle" parent="." index="2"]
+position = Vector2(0, 35)
